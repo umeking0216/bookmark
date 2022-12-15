@@ -1,0 +1,514 @@
+@charset "utf^8";
+html{
+  font-size: 62.5%;
+}
+
+body{
+    color: #333333;
+    font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    width: 100%;
+    margin: auto;
+}
+
+img{
+   max-width: 100%;
+   height: auto;
+}
+
+#header{
+    position: relative;/*h1の中央寄せ配置の起点とするためのrelative*/
+    height: 100vh;/*高さを全画面にあわせる*/
+} 
+
+
+#video-area{
+    position: absolute;
+    z-index: -1;/*最背面に設定*/
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+}
+
+#video {
+    /*天地中央配置*/
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*縦横幅指定*/
+    width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+    height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/*見出し設定*/
+h1{
+    /*要素の配置*/
+    position:absolute;
+    /*要素を天地中央寄せ*/
+    top: 45%;
+    left: 25%;
+    transform: translateY(-50%) translateX(-50%);
+    /*見た目の調整*/
+    color:#fff;
+    text-shadow: 0 0 15px #666;
+}
+
+
+
+
+
+/* header */
+.showcase{
+    width: 1140px;
+    height: auto;
+}
+
+.showcase video{
+    object-fit: cover;
+}
+
+.site-title{
+    font-weight: bold;
+    color: #fff;
+    font-size: 4.8rem;
+    font-weight: bold;
+    margin: auto;
+}
+
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+    
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+
+.site-title2{
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.posstion{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,0,0);
+    letter-spacing: 0.1em;
+    width: 1140px;
+    height: auto;
+}
+
+.chees_img{
+    position: relative;
+    margin: auto;
+}
+
+.wrapper{
+   max-width: 1140px;
+   margin: auto;
+}
+
+.header_pic{
+    margin: auto;
+}
+
+.header_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.nav_list{
+  display: flex;
+  color: #fff;
+}
+
+.nav_item{
+   margin: 0 0 0 50px;
+   font-size: 2.1rem;
+}
+
+
+
+/* about */
+
+.profile{
+    padding: 60px 0 80px 0;
+}
+
+.profile-wrapper{
+    margin: auto;
+}
+
+.text-center{
+text-align: center;
+}
+
+.profile__title{
+    margin: 0 0 30px;
+    font-weight: bold;
+    color: #ffd61a;
+    font-size: 2.4rem;
+}
+
+.japanese_title{
+    font-size: 1.8rem;
+    margin: 0 0 60px;
+}
+
+.text_no_haba{
+    margin: 0 0 40px;
+}
+
+.about_pic{
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+.about_pic_size{
+    width: 25%;
+}
+
+
+/* course */
+
+.course__title{
+    margin: 0 0 30px;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.course_style{
+    max-width: 1140px;
+    margin: auto;
+    background-color: #fafafa;
+}
+
+.course_wrapper{
+    margin: auto;
+    padding: 60px 0;
+}
+
+.course_titele2{
+    margin: 0 0 60px;
+}
+
+.course_pic{
+    display: flex;
+    align-items: center;
+}
+
+.course_pic_style{
+    width: 50%;
+    
+}
+
+.course_item{
+    width: 480px;
+    margin:  40px 0 0 50px;
+    text-align: left;
+}
+
+/* NEWS */
+
+.news{
+    padding: 0 0 60px 0;
+}
+
+.news_titel{
+     margin: 0 0 60px 0;
+}
+
+.news_itme{
+    width: 300px;
+    margin: 0 30px 0 0;
+}
+
+
+    
+    .news_itme:hover {
+    opacity: 0.7;
+    color: white;
+    }
+
+.news_wrapper{
+    margin: 0 auto 60px auto;
+    max-width: 960px;
+}
+
+.news_item2{
+    margin: 30px 0 24px 0;
+    width: 300px;
+}
+
+.news_item3{
+    line-height: normal;
+    width: 300px;
+}
+
+.news_wrappr  :hover{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.1875em);
+  }
+
+
+.btn{
+  display: block;
+  margin: auto;
+  padding: 21px 0;
+  background-color: #ffd61a;
+  color: #fff;
+  font-size: 1.8rem;
+  width: 300px;
+  text-align: center;
+}
+
+.btn{
+  display: block;
+  margin: auto;
+  padding: 21px 0;
+  background-color: #ffd61a;
+  color: #fff;
+  font-size: 1.8rem;
+  width: 300px;
+  text-align: center;
+}
+
+
+.trans-rotate {
+    padding: 16px;
+    color: white;
+    }
+    
+    .trans-rotate:hover {
+    transform: rotate(30deg);
+    }
+
+/* Accese */
+
+.access{
+    max-width: 1140px;
+    height: auto;
+    background-color: #fafafa;
+    padding: 60px 0 60px 0;
+    margin: auto;
+}
+
+.
+
+.access_item{
+    margin: 30px 0 60px 0;
+}
+
+.access_wrapper{
+    max-width: 640px;
+    margin: auto;
+}
+
+.access_inner{
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0 auto 60px auto;
+}
+
+.access_titel{
+  width: 240px;
+  margin: 15px 0 15px 0;
+  padding: 8px 0 0 0;
+}
+
+.access_item{
+   width: 384px;
+   margin: 15px 0px 15px 8px;
+}
+
+
+/* contact */
+
+.contact{
+    padding: 20px 0 20px 0;
+}
+
+.contact_item{
+    margin: 60px 0 30px 0;
+}
+
+.contact_item2{
+    margin: 0 0 70px;
+}
+
+.form_wrapper{
+    max-width: 640px;
+    margin: auto;
+    height: auto;
+}
+
+.form_inner{
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0 0 30px 0;
+}
+
+.form_titel{
+  width: 240px;
+  margin: 16px 0 64px 0;
+  padding: 8px 0 0 0;
+}
+
+.form_item{
+   width: 384px;
+   margin: 8px 0px 8px 8px;
+}
+
+.form_parts{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border: solid 1px #c9c9c9;
+    font-size: 1.6rem;
+}
+
+.form-table {
+    width: 100%;
+    margin: 0 0 30px;
+    max-width: 640px;
+  }
+
+  .form-table *{
+    box-sizing: border-box;
+  } 
+
+  table {
+    border-collapse: collapse;
+  }
+  
+  
+.form-table th,
+.form-table td {
+  border-top: 3px solid #bfbfbf;
+  border-bottom: 3px solid #bfbfbf;
+  
+  padding: 8px 0 8px 8px;
+}
+ 
+.form-table th {
+  padding-left: 16px;
+  padding-right: 64px;
+  position: relative;
+  text-align: left;
+  width: 240px;
+  vertical-align: middle;
+  border-right: solid #bfbfbf;
+
+}
+
+.form-table td{
+  width: 400px;
+}
+
+.form-table_item{
+  border: solid;
+}
+
+.label-item{
+margin: 0 0 12px 0;
+}
+
+  input[type="submit"],
+  input[type="text"],
+  select,
+  textarea,
+  button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+  }
+  
+  input[type="radio"]{
+    border-radius: 3px;
+  }
+  
+  input[type="text"],
+  textarea,select {
+    background: #f8f8f8;
+    display: block;
+    font-size: 16px;
+    padding: 8px 8px;
+    width: 320px;
+    transition: 0.8s;
+    border-radius: 0;
+    border: solid 2px #c9c9c9;
+  
+  }
+   
+  input[type="text"]:focus,
+  textarea:focus {
+    background: #e9f5fb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+   
+  textarea[name="content"] {
+    display: inline-block;
+    width: 100%;
+    height: 150px;
+  }
+   
+  input::placeholder,
+  textarea::placeholder {
+    color: #ccc;
+  }
+   
+  ::-webkit-input-placeholder {
+    color: #ccc;
+    opacity: 1;
+  }
+   
+  ::-moz-placeholder {
+    color: #ccc;
+    opacity: 1;
+  }
+   
+  :-ms-input-placeholder {
+    color: #ccc;
+    opacity: 1;
+  }
+
+
+/* footer */
+
+.footer{
+   background-color: #707070;
+   max-width: 1140px;
+   margin: auto;
+   height: 72px;
+}
+
+.copyrights{
+    color: #fff;
+    font-size: 1.6rem;
+
+}
